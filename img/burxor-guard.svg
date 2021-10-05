@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+
+      .b {
+        fill: none;
+        stroke: #37847f;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>burxor-guard</title>
+  <rect class="a" width="109" height="109" rx="19" ry="19"/>
+  <g>
+    <path class="b" d="M26.5,43.2V57.9c0,11,12.5,20,28,20s28-9,28-20V37.7"/>
+    <path class="b" d="M59.6,65.2c13-1.7,22.9-9.9,22.9-19.7"/>
+    <path class="b" d="M26.5,45.5c0,9.6,9.6,17.7,22.4,19.6"/>
+    <path class="b" d="M26.5,37.7a6.6,6.6,0,0,1,13.2,0V62.5"/>
+    <line class="b" x1="69.3" y1="54.5" x2="69.3" y2="62.5"/>
+    <path class="b" d="M82.5,37.7a6.6,6.6,0,1,0-13.2,0V48.8"/>
+    <path class="b" d="M48.9,65.1a6.2,6.2,0,0,1,5.6,6.2"/>
+    <path class="b" d="M54.5,71.3a6.1,6.1,0,0,1,5.1-6.1"/>
+    <line class="b" x1="54.5" y1="71.3" x2="54.5" y2="77.9"/>
+  </g>
+</svg>
