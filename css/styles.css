@@ -22,7 +22,8 @@ body {
   }
 
   .navbar{
-      padding-top: 2rem !important;
+    padding-top: 2rem !important;
+    border-bottom: 1px solid #BBBBBB;
   }
 
   .nav-link {
@@ -34,12 +35,38 @@ body {
     letter-spacing: -0.36px;
     text-align: left;
     color: #000;
+    position: relative;
     padding: .5rem 1.2rem;
   }
 
-  .nav-item{
-    padding-right: 10px;
-  }
+    .nav-link:hover{
+        color: var(--turqoise);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item{
+    margin-right: 20px;
+    }
+
+      .nav-link::before {
+        transition: 400ms;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: var(--turqoise);
+        width: inherit;
+      }
+      
+      .nav-link-ltr::before {
+        width: 0%;
+        bottom: 6px;
+      }
+      
+      .nav-link-ltr:hover::before {
+        width: 85%;
+      }
+
+      
 
 
   .animated-icon1, .animated-icon2, .animated-icon3 {
@@ -125,62 +152,65 @@ body {
         font-family: 'Manrope', sans-serif;
     }
 
+    p{
+        font-size: 18px;
+        color: #7d7d7d;
+    }
 
     h1{
         font-size: 58px;
-        letter-spacing: -3;
+        letter-spacing: -1px;
         line-height: 1.2;
     }
 
     h2{
         font-size: 48px;
-        letter-spacing: -3;
+        letter-spacing: -1px;
         line-height: 1.2;
     }
 
     h3{
         font-size: 36px;
-        letter-spacing: -4;
+        letter-spacing: -1px;
         line-height: 1.2;
     }
 
     h4{
         font-size: 24px;
-        letter-spacing: -3;
+        letter-spacing: -0.3px;
         line-height: 1.3;
     }
 
     h5{
         font-size: 18px;
-        letter-spacing: auto;
+        letter-spacing: -1.5px;
         line-height: 1.6;
     }
 
     .btn-primary-nav {
         color: #fff;
+        padding: 20px 60px;
         background-color: var(--turqoise);
-        border-color: var(--turqoise);
-        width: 255px;
-        height: 55px;
-        margin: .5rem 1rem !important;
-    } 
+        margin: 0;
+        border-radius: 0;
+    }
 
     .btn-primary-nav:hover{
         color: #fff;
+        padding: 20px 60px;
         background-color: var(--hover);
-        border-color: var(--hover);
-        width: 255px;
-        height: 55px;
-        margin: .5rem 1rem !important;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+        border-radius: 0;
     }
 
     .btn-primary-nav:active{
         color: #fff;
+        padding: 20px 60px;
         background-color: var(--hover);
-        border-color: var(--hover);
-        width: 255px;
-        height: 55px;
-        margin: .5rem 1rem !important;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+        border-radius: 0;
     }
 
     img.bruxor-mockup {
@@ -208,27 +238,78 @@ body {
             padding-right: 3%;
       }
 
-      .paragraph{
+      .last-column p{
         font-size: 20px;
-        color: #7d7d7d;
-  }
+      }
 
-  .btn-primary-col {
-        color: #fff;
-        width: 300px;
-        height: 75px;
-        margin: 149px 193.5px 238px 4px;
-        padding: 18px 63.6px 17px 64.4px;
-        background-color: var(--turqoise);
-        margin: 0;
+
+.btn-primary-col {
+    color: #fff;
+    padding: 20px 60px;
+    background-color: var(--turqoise);
+    margin: 0;
+    border-radius: 0;
 }
 
 .btn-primary-col:hover {
-    color: #fff;
-    width: 300px;
-    height: 75px;
-    margin: 149px 193.5px 238px 4px;
-    padding: 18px 63.6px 17px 64.4px;
     background-color: var(--hover);
-    margin: 0;
+    transition: all 0.3s ease-in-out;
+    color:#fff;
+    border-radius: 0;
+}
+
+.btn-primary-col:active {
+    background-color: var(--hover);
+    transition: all 0.3s ease-in-out;
+    color:#fff;
+    border-radius: 0;
+}
+
+
+.section-2-paragraph {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 20px 30px;
+    font-weight: normal;
+    color: #000;
+    border-radius: 50px;
+    background-color: #eaf0f0;
+    align-items: center;
+}
+
+.how-steps h4{
+    font-weight: 600;
+    padding-top:30px;
+}
+
+.how-steps img{
+    width:100px;
+}
+
+.info h4{
+    font-weight: 600;
+}
+
+.bruxordeviceimg img{
+    height: 100%;
+    width: 100%;
+    padding:6%;
+}
+
+.section-4-items p{
+    margin: 0 ;
+    width: fit-content;
+    padding: 20px 30px;
+    font-weight: normal;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #2b3231;
+}
+
+.section-4-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 5%;
 }
