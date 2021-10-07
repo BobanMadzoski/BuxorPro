@@ -24,7 +24,7 @@ a{
 a:hover{
     font-size: 18px;
     color: var(--hover);
-    text-decoration: underline;
+    text-decoration: none;
     transition: all .3s ease-in-out;
 }
 
@@ -455,6 +455,86 @@ a:hover{
 }
 
 
+.carousel-control-next-icon {
+    outline: none;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    border-radius: 50%;
+    background-size: 30px 10px;
+    box-shadow: 0px 2px 5px #000000;
+    transition: box-shadow .3s ease-in-out;
+    
+}
+
+.carousel-control-next-icon::after{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+    content: '>';
+}
+
+.carousel-control-prev-icon {
+    outline: none;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    border-radius: 50%;
+    background-size: 30px 10px;
+    box-shadow: 0px 2px 5px #000000;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.carousel-control-prev-icon::after{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+    content: '<';
+}
+
+
+.carousel-indicators .active{
+    opacity: 1 !important;
+
+    -webkit-box-shadow:inset 0px 0px 0px 20px var(--turqoise);
+    -moz-box-shadow:inset 0px 0px 0px 20px var(--turqoise);
+    box-shadow: 0px 0px 0px 1px #265d59 !important;
+    border-bottom:none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;   
+    bottom:-100px;
+}
+
+.carousel-indicators [data-bs-target]{
+    border-top: 0;
+
+    width: 100%;
+    bottom: -100px;
+    opacity: 1 !important;
+
+}
+.carousel-indicators{
+    bottom: -100px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom:auto;
+}
+
+.sec-6-price{
+    display: inline;
+    margin: 20px;
+    text-decoration: line-through;
+}
+
+.btn-primary-col-buynow {
+    color: #fff;
+    padding: 20px 80px;
+    background-color: var(--turqoise);
+    margin: 0;
+    border-radius: 0;
+}
+
 
  /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {  }
@@ -505,6 +585,11 @@ a:hover{
     }
 
 }
+
+
+
+
+
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
