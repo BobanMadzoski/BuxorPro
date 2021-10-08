@@ -21,11 +21,12 @@ a{
     transition: all .3s ease-in-out;
 }
 
+
 a:hover{
     font-size: 18px;
     color: var(--hover);
-    text-decoration: none;
-    transition: all .3s ease-in-out;
+    text-decoration: underline;
+    transition: all .2s ease-in-out;
 }
 
 
@@ -42,6 +43,7 @@ a:hover{
   }
 
   .nav-link {
+    text-decoration: none;
     transition: .3s ease-in-out;
     font-size: 18px;
     font-weight: 500;
@@ -58,6 +60,7 @@ a:hover{
     .nav-link:hover{
         color: var(--turqoise);
         transition: all 0.3s ease-in-out;
+        text-decoration: none;
     }
 
     .nav-item{
@@ -327,13 +330,15 @@ a:hover{
     height: 100%;
     width: 100%;
     padding:6%;
+    padding-bottom: 60px;
+    padding-top: 0px;
 }
 
 .section-4-paragraph{
     margin: 0 ;
     text-align: center !important;
     width: fit-content;
-    padding: 20px 30px;
+    padding: 15px 25px;
     font-weight: normal;
     color: #fff;
     border-radius: 50px;
@@ -345,7 +350,7 @@ a:hover{
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 5%;
+    padding: 4%;
 }
 
 
@@ -416,7 +421,6 @@ a:hover{
 }
 
 .section-5-paragraph {
-    margin-left: 10%;
     width: fit-content;
     padding: 10px 20px;
     font-weight: normal;
@@ -428,6 +432,22 @@ a:hover{
 
 .section-5 p{
     font-size: 16px;
+}
+
+.section-5 a{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--turqoise);
+        text-decoration: underline;
+        transition: all .3s ease-in-out;  
+}
+
+.section-5 a:hover{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--hover);
+    text-decoration: underline;
+    transition: all .3s ease-in-out;  
 }
 
 .fivestars{
@@ -534,13 +554,82 @@ a:hover{
     margin: 0;
     border-radius: 0;
 }
+.btn-primary-col-buynow:hover {
+    color: #fff;
+    padding: 20px 80px;
+    background-color: var(--hover);
+    margin: 0;
+    border-radius: 0;
+}
 
+.sec-6-brpro{
+    margin-top: 6px;
+    font-size: 14px;
+    width: 270px;
+    font-weight: normal;
+    color: #000;
+    border-radius: 50px;
+    background-color: #e2e8e8;
+    align-items: center;
+}
+
+.product-qualities img{
+    width: 85px;
+    margin-bottom: 10px;
+}
+
+.product-qualities p{
+    font-size: 14px;
+}
+
+.footer-ul a{
+    color: #000 !important;
+    font-size: 18px !important;
+    text-decoration: none !important;
+}
+
+.footer-ul a:hover{
+    color: var(--hover) !important;
+    text-decoration: underline !important;
+}
+
+.footer-contact p{
+    color: #000;
+    font-weight: medium;
+}
+
+.footer-contact-span{
+    color: #7d7d7d;
+    font-size: 16px;
+}
 
  /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {  }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .section-4-paragraph{
+        margin: 0 ;
+        text-align: center !important;
+        width: fit-content;
+        padding: 10px 20px;
+        font-weight: normal;
+        color: #fff;
+        border-radius: 50px;
+        background-color: #2b3231;
+    }
+
+    .section-2-paragraph {
+        margin: 0 auto;
+        width: fit-content;
+        padding: 10px 20px;
+        font-weight: normal;
+        color: #000;
+        border-radius: 50px;
+        background-color: #eaf0f0;
+        align-items: center;
+    }
 
     .card {
         position: relative;
