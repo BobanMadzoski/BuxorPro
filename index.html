@@ -1,11 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruxor Pro</title>
+  <meta name="description" content="Dental Guards for everyone">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="BruxorPro">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -13,11 +15,12 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="favicon.ico">
  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="./js/gsap.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +32,9 @@
 </head>
 
 <body>
+  <span id="circle" class="circle"></span>
   <!--NAVBAR-->
-  
-  <section class="section-padding">
+  <section id="nav" class="section-padding">
     <nav class="navbar navbar-expand-lg bg-light-2 p-3 navbar-light">
       <div class="container-fluid">
       <a href="#" class="navbar-brand"><img width="195.3px" height="40px" src="./img/bruxor-pro-logo.svg" alt="BruxorPro Logo"></a>
@@ -63,21 +66,34 @@
       </div>
   </nav>
   </section>
-  <section class="section-padding pt-5 pb-5">
+  <section  id="text" class="section-padding pt-5 pb-5">
     <div class="container-fluid">
       <div class="row pb-5">
         <div class="col-md-8">
-          <div class="showcaseimg">
-            <div><img class="img-responsive w-100 p-1" src="img/bruxor-mockup.png" class="bruxor-mockup" alt="Bruxor Mockup"></div>
-            <div><img class="img-responsive w-100 p-1" src="/img/pexels-andrea-piacquadio-774909.png" class="bruxor-mockup" alt="Pexels Ancrea Piacquadio"></div>
+
+          <div class="showcaseimg p-1">
+            <div class="content">
+            <img class="img-responsive w-100 " src="img/bruxor-mockup.png" class="bruxor-mockup" alt="Bruxor Mockup">
+          </div>
+
+            <div class="content2">
+            <img class="img-responsive w-100 " src="img/pexels-andrea-piacquadio-774909.png" class="bruxor-mockup" alt="Bruxor Mockup">
+          </div>
+
           </div>
         </div>
         <div class="col-lg-4 last-column">
           <div>
           <div>
+            <div>
             <h1 class="pt-4 pb-4">Protect your teeth, protect your smile.</h1>
+          </div>
+          <div>
             <p class="pb-4">Introducing clear aligner treatment with remote monitoring by an orthodontist. Skip the office visits, keep the expert oversight.</p>
+          </div>
+          <div>
             <button class="btn btn-primary-col pt-4">Get Bruxor Pro</button>
+          </div>
           </div>
         </div>
         </div>
@@ -200,7 +216,7 @@
       <p class="section-5-paragraph text-start">94% Positive Feedback</p>
       <h2>Customer Reviews.</h2>
       <p>This is a well-made product, but the fact that they use one size for both men and women means that it doesn't fit.</p>
-      <a href="#">Read All Reviews <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+      <a class="reviews" href="#">Read All Reviews <svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
       </svg></a>
     </div>
@@ -246,7 +262,7 @@
       <img
         src="./img/slide-1.webp"
         class="d-block w-100"
-        alt="..."
+        alt="Bruxor Package"
       />
     </div>
 
@@ -254,21 +270,21 @@
       <img
         src="./img/slide-2.webp"
         class="d-block w-100"
-        alt="..."
+        alt="Dental Guard"
       />
     </div>
     <div class="carousel-item">
       <img
         src="./img/slide-3.webp"
         class="d-block w-100"
-        alt="..."
+        alt="Bruxor Pro Package"
       />
     </div>
     <div class="carousel-item">
       <img
         src="./img/slide-4.webp"
         class="d-block w-100"
-        alt="..."
+        alt="Bruxor Package Behind"
       />
     </div>
   </div>
@@ -322,7 +338,8 @@
   <!-- Thumbnails -->
 <!-- Carousel wrapper -->   
       </div>
-      <div class="col-lg-6 mt-5 p-5 pt-5 text-start">
+      <div class="col-md-1"></div>
+      <div class="col-lg-5 mt-5 p-5 pt-5 text-start">
         <h2>The most advanced solution for bruxism.</h2>
         <p>Hand-Made in the US. Free Shipping.</p>
         <h2>$73.99<p class="sec-6-price">93.99</p></h2>
@@ -372,23 +389,23 @@
   </div>
 </div>
 </section>
-<section class="section-padding">
+<section class="section-padding footer-section">
   <div class="container-fluid">
     <div class="row p-3 pt-5">
       <div class="col-md-6">
         <a href="#" class="navbar-brand"><img width="195.3px" height="40px" src="./img/bruxor-pro-logo.svg" alt="BruxorPro Logo"></a>
       </div>
-      <div class="col-lg-3 p-5">
+      <div class="col-lg-3">
         <ul class="footer-ul" style="list-style: none; padding: 0;"><span style="font-weight:600;">Quick Links</span> 
-          <li class="pt-3"> <a href="index.html"> Home </a></li>
-          <li class="pt-2"> <a href="#"> Why Bruxor? </a></li>
-          <li class="pt-2"> <a href="#"> How it Works </a></li>
-          <li class="pt-2"> <a href="#"> Reviews </a></li>
-          <li class="pt-2"> <a href="#"> FAQ </a></li>
-          <li class="pt-2"> <a href="#"> Contact Us </a></li>
+          <li> <a href="index.html"> Home </a></li>
+          <li> <a href="index.html"> Why Bruxor? </a></li>
+          <li> <a href="index.html"> How it Works </a></li>
+          <li> <a href="index.html"> Reviews </a></li>
+          <li> <a href="index.html"> FAQ </a></li>
+          <li> <a href="index.html"> Contact Us </a></li>
           </ul>
       </div>
-      <div class="col-lg-3 pt-5 p-5">
+      <div class="col-lg-3">
         <ul class="footer-contact" style="list-style: none; padding: 0;"><span style="font-weight:600;">Contact</span> 
           <li><p class="pt-3">support@bruxor.com</p></li>
           <li><br></li>
@@ -435,6 +452,30 @@ $('.third-button').on('click', function () {
 
 
 </script>
+
+<script>
+
+jQuery(document).ready(function() {
+
+  var mouseX = 0, mouseY = 0;
+  var xp = 0, yp = 0;
+   
+  $(document).mousemove(function(e){
+    mouseX = e.pageX - 14;
+    mouseY = e.pageY - 14; 
+  });
+    
+  setInterval(function(){
+    xp += ((mouseX - xp)/3);
+    yp += ((mouseY - yp)/3);
+    $("#circle").css({left: xp +'px', top: yp +'px'});
+  }, 20);
+
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 
 </body>
 

@@ -6,6 +6,127 @@ body {
     background-color: var(--gray) !important;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+.circle {
+	position: absolute;
+  background-color:#37847f;
+  opacity:0.4;
+	width: 30px; 
+	height: 30px; 
+  border-radius: 50%;  
+  z-index: 999999;
+  pointer-events: none !important;
+}
+
+
+.showcaseimg {
+    position: relative;
+    height: 70vh;
+  }
+  
+  .showcaseimg .content {
+    width: 100%;
+    height: 100%;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+    animation: reveal 1s ease-in-out forwards;
+    margin: 5px;
+  }
+  
+  .showcaseimg .content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bfcdcc;
+    z-index: 1;
+    animation: reveal 1s reverse forwards;
+    animation-delay: 1.5s;
+    transform-origin: bottom;
+  }
+  
+  .showcaseimg .content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .showcaseimg .content2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .showcaseimg .content2 {
+    width: 100%;
+    height: 100%;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+    animation: reveal 1s ease-in-out forwards;
+    margin: 5px;
+  }
+  
+  .showcaseimg .content2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bfcdcc;
+    z-index: 1;
+    animation: reveal 1s reverse forwards;
+    animation-delay: 1.7s;
+    transform-origin: bottom;
+  }
+  
+  @keyframes reveal {
+    0% {
+      transform: scaleY(0);
+    }
+    
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .showcaseimg .content h2 {
+    position: absolute;
+    right: -80px;
+    bottom: 40px;
+    margin: 0;
+    padding: 10px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: scaleX(0);
+    transform-origin: left; 
+    animation: reveal 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  .showcaseimg .content h2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    animation: reveal 1s reverse forwards;
+    animation-delay: 2s;
+    transform-origin: right;
+  }
 :root{
     --turqoise : #37847f;
     --gray : #F1F1F1;
@@ -58,7 +179,7 @@ a:hover{
   }
 
     .nav-link:hover{
-        color: var(--turqoise);
+        color: var(--hover) !important;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
     }
@@ -481,11 +602,11 @@ a:hover{
 }
 
 .section-5 a{
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--turqoise);
-        text-decoration: underline;
-        transition: all .3s ease-in-out;  
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--turqoise);
+    text-decoration: underline;
+    transition: all .1s ease-in-out;  
 }
 
 .section-5 a:hover{
@@ -493,8 +614,20 @@ a:hover{
     font-weight: 600;
     color: var(--hover);
     text-decoration: underline;
-    transition: all .3s ease-in-out;  
+    transition: all .3s ease-in-out;    
+    margin-right: 10px;
 }
+
+.section-5 a:hover svg{
+    margin-left: 5px;
+    transition: margin .2s ease-in-out;
+    color: var(--hover);
+}
+
+.section-5 a svg{
+    transition: margin .2s ease-in-out;
+}
+
 
 .fivestars{
     width: 120px;
@@ -629,6 +762,10 @@ a:hover{
     font-size: 14px;
 }
 
+.footer-ul li{
+    padding-top: 8px;
+}
+
 .footer-ul a{
     color: #000 !important;
     font-size: 18px !important;
@@ -732,7 +869,15 @@ a:hover{
 
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
+
+    .footer-section{
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+
+
     .info1{
         margin: 0 auto;
         text-align: left !important;
