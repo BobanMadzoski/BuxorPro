@@ -467,10 +467,9 @@ jQuery(document).ready(function() {
 </script>
 
 <script>
-  $(function(e){
-  $(".preloader").hide();
-  $("body").css("overflow", "scroll");
-});
+  $(window).on("load", function(){
+    $(".preloader").delay(1000).slideUp("slow");
+  });
 </script>
 
 
